@@ -13,19 +13,23 @@ namespace BT01
         {
             bankinh = 1.0;
         }
+
         public HinhTron(double bankinh)
         {
             this.bankinh = bankinh;
         }
+
         public double BanKinh
         {
             get { return bankinh; }
             set { bankinh = Math.Abs(bankinh); }
         }
+
         public double TinhDienTich()
         {
             return bankinh * bankinh * Math.PI;
         }
+
         public double TinhChuVi()
         {
             return 2 * bankinh * Math.PI;
